@@ -1,0 +1,23 @@
+C:\Users\pankuma\source\repos\kaizala\kaizala\bin\Debug\netstandard2.0\kaizala.deps.json
+C:\Users\pankuma\source\repos\kaizala\kaizala\bin\Debug\netstandard2.0\kaizala.dll
+C:\Users\pankuma\source\repos\kaizala\kaizala\bin\Debug\netstandard2.0\kaizala.pdb
+C:\Users\pankuma\source\repos\kaizala\kaizala\bin\Debug\netstandard2.0\System.Net.Http.Formatting.dll
+C:\Users\pankuma\source\repos\kaizala\kaizala\bin\Debug\netstandard2.0\System.Net.Http.Formatting.xml
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.csproj.CoreCompileInputs.cache
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.AssemblyInfoInputs.cache
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.AssemblyInfo.cs
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.csproj.CopyComplete
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.dll
+C:\Users\pankuma\source\repos\kaizala\kaizala\obj\Debug\netstandard2.0\kaizala.pdb
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\bin\Debug\netstandard2.0\kaizala.deps.json
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\bin\Debug\netstandard2.0\kaizala.dll
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\bin\Debug\netstandard2.0\kaizala.pdb
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\bin\Debug\netstandard2.0\System.Net.Http.Formatting.dll
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\bin\Debug\netstandard2.0\System.Net.Http.Formatting.xml
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.csproj.CoreCompileInputs.cache
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.AssemblyInfoInputs.cache
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.AssemblyInfo.cs
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.csproj.CopyComplete
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.dll
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.pdb
+D:\Projects\MOCAT\Extensions\Kaizala API DLL\obj\Debug\netstandard2.0\kaizala.csprojAssemblyReference.cache
