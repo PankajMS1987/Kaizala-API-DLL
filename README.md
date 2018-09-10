@@ -44,7 +44,7 @@ This repository contains C# dll to make API call to Kaizala server and perform s
   If Message went through, you will get referenceId otherwise Error ResponseCode
 
 ## To Send Text message in a group with BOT:
- - If you have already created a bot User and attached to the group then you just need to get **BotUserSession** and then **GetContentCreationAPIStub** to send messages in the group.
+ - If you have already created a bot User and attached to the group then you just need to get **BotUserSession** and then **GetContentCreationAPIStub** to send messages in the group. You can find more API about BOT [Here](https://github.com/PankajMS1987/Kaizala-API-DLL/blob/master/KaizalaSession.md)
  
  ```
      BotUserSession bus =  ks.GetBotUserSession("**********");
