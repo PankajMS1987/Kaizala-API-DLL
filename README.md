@@ -14,7 +14,7 @@ This repository contains C# dll to make API call to Kaizala server and perform s
   
   **KaizalaSession** internally generates and keeps AccessToken. It eventually pass it during API Calls.
   
-- To send messages you need to get **IContentCreationAPIStub** from KaizalaSession
+- To send messages you need to get **IContentCreationAPIStub** from KaizalaSession. You can find more about IContentCreationAPIStub  [Here](https://github.com/PankajMS1987/Kaizala-API-DLL/blob/master/Services/IContentCreationAPIStub.md)
 
   ```
   IContentCreationAPIStub creationApi = ks.GetContentCreationAPIStub();
