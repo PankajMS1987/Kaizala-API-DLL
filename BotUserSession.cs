@@ -3,6 +3,7 @@
     using Microsoft.Kaizala.Exceptions;
     using Microsoft.Kaizala.Models;
     using Microsoft.Kaizala.Services;
+    using System;
 
     public class BotUserSession : IKaizalaSession
     {
@@ -36,12 +37,16 @@
 
         public string GetAccessToken()
         {
+            if (String.IsNullOrEmpty(this.AccessToken))
+            {
+                this.GenerateAccessToken();
+            }
             return this.AccessToken;
         }
 
         public string GetApiEndPoint()
         {
-            throw new System.NotImplementedException();
+            return KaizalaSession.GetApiEndPoint();
         }
         public IContentCreationAPIStub GetContentCreationAPIStub()
         {

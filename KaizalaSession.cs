@@ -92,6 +92,10 @@
         {
             return BotUserAPI.CreateBotUser(botRequest);
         }
+        public ErrorDetails AddBotUserToGroup(string groupID, string botUserId)
+        {
+            return BotUserAPI.AddBotUserToGroup(groupID, new AddBotToGroupRequest(botUserId));
+        }
 
         public ErrorDetails DeleteBotUser(string botUserId)
         {
