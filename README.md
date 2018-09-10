@@ -14,7 +14,7 @@ This repository contains C# dll to make API call to Kaizala server and perform s
   
   **KaizalaSession** internally generates and keeps AccessToken. It eventually pass it during API Calls.
   
-- To send messages you need to get **IContentCreationAPIStub** from KaizalaSession
+- To send messages you need to get **IContentCreationAPIStub** from KaizalaSession. You can find more about IContentCreationAPIStub  [Here](https://github.com/PankajMS1987/Kaizala-API-DLL/blob/master/Services/IContentCreationAPIStub.md)
 
   ```
   IContentCreationAPIStub creationApi = ks.GetContentCreationAPIStub();
@@ -42,3 +42,19 @@ This repository contains C# dll to make API call to Kaizala server and perform s
   chunks of 30 Subscribers.
   
   If Message went through, you will get referenceId otherwise Error ResponseCode
+
+## To Send Text message in a group with BOT:
+ - If you have already created a bot User and attached to the group then you just need to get **BotUserSession** and then **GetContentCreationAPIStub** to send messages in the group.
+ 
+ ```
+     BotUserSession bus =  ks.GetBotUserSession("**********");
+    IContentCreationAPIStub contentAPI = bus.GetContentCreationAPIStub();
+    SendMessageRq sendMsgRequest = new SendMessageRq();
+    request.Message = "test message";
+    List<string> numberList = new List<string>();
+    numberList.Add("+91**********");
+    sendMsgRequest.Subscribers = numbers;
+    request.SendToAllSubscribers = false;
+    List<SendMessageResponse> task = contentAPI.SendMessage("**groupId**", request);
+
+ ```
