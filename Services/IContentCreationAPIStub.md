@@ -4,7 +4,7 @@ This interface will help you to create contents and sent it over to the groups l
 ## Functions
  - SendMessage
 	This will send messages to the specified group ID. It requires groupID and SendMessageRq to send it to the group.
-	If it is a flat group then this message will be visible to all and if it a Hub-spoke group then you can configure it to send it to all or specif subscribers.
+	If it is a flat group then this message will be visible to all and if it a Hub-spoke group then you can configure it to send it to all or specifc subscribers.
 	
 	- Send message to all subscribers
 	
@@ -26,3 +26,24 @@ This interface will help you to create contents and sent it over to the groups l
         numbers.Add("+91xxxxxxxxxx");
 		request.Subscribers = numbers;
 		```
+		
+	This function returns **List<SendMessageResponse>** . If number of subscribers are less than 30 then you will receive only one SendMessageResponse otherwise multiple.
+	
+	On success you will receive **referenceId** otherwise errorDetails.
+	
+- SendBulkMessageInSameGroup
+	If you want to send multiple messages in a single group, then use this function. you just need to provide **List<SendMessageRq>** .
+	
+- SendAction
+	If you want to send Announcement then call this function with SendActionRequest and group ID. In SendActionRequest, Subscribers and SendToAllSubscribers are same as explained above.
+	
+	For ActionType put ActionType.ANNOUNCEMENT and AnnouncementActionBody as ActionBody as below.
+	```
+		SendActionRequest actionRequest = new SendActionRequest();
+		actionRequest.ActionType = ActionType.ANNOUNCEMENT;
+		AnnouncementActionBody actionBody = new AnnouncementActionBody();
+		actionBody.Title = "Test Title";
+		actionBody.Message = "Test Body";
+		actionRequest.ActionBody = actionBody;
+
+	```

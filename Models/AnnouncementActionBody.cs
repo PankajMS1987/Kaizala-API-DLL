@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public class AnnouncementActionBody
+    public class AnnouncementActionBody : IActionBody
     {
         public string Title { get; set; }
         public string Message { get; set; }
