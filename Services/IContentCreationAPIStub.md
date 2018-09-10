@@ -2,7 +2,8 @@
 This interface will help you to create contents and sent it over to the groups like send mesage, send announcement etc.
 
 ## Functions
- - SendMessage
+ - **SendMessage**
+ 
 	This will send messages to the specified group ID. It requires groupID and SendMessageRq to send it to the group.
 	If it is a flat group then this message will be visible to all and if it a Hub-spoke group then you can configure it to send it to all or specifc subscribers.
 	
@@ -31,10 +32,12 @@ This interface will help you to create contents and sent it over to the groups l
 	
 	On success you will receive **referenceId** otherwise errorDetails.
 	
-- SendBulkMessageInSameGroup
+- **SendBulkMessageInSameGroup**
+
 	If you want to send multiple messages in a single group, then use this function. you just need to provide **List<SendMessageRq>** .
 	
-- SendAction
+- **SendAction**
+
 	If you want to send Announcement then call this function with SendActionRequest and group ID. In SendActionRequest, Subscribers and SendToAllSubscribers are same as explained above.
 	
 	For ActionType put ActionType.ANNOUNCEMENT and AnnouncementActionBody as ActionBody as below.
