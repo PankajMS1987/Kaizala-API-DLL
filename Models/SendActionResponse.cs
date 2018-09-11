@@ -4,5 +4,6 @@
     {
         public string ReferenceId { get; set; }
         public string ActionId { get; set; }
+        public FailedResult[] FailedResult { get; set; }
     }
 }
