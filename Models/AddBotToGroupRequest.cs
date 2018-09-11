@@ -10,6 +10,6 @@
         {
             this.BotUserId = botUserId;
         }
-        string BotUserId { get; set; }
+        public string BotUserId { get; set; }
     }
 }

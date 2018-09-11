@@ -17,7 +17,7 @@
         public const string CREATE_BOT_USER_URL = "{0}/v1/bot";
         public const string UPDATE_BOT_USER_URL = "{0}/v1/bot/{1}";
         public const string GENERATE_BOT_ACCESS_TOKEN = "{0}/v1/bot/accessToken/{1}";
-        public const string ADD_BOT_TO_GROUP_URL = "{0}/v1/groups/{{1}}/bot";
+        public const string ADD_BOT_TO_GROUP_URL = "{0}/v1/groups/{1}/bot";
         public const int MAX_SUBSCRIBER_COUNT = 30;
     }
 }
