@@ -2,12 +2,12 @@
 {
     public class QuestionType
     {
-        public static string TEXT = "Text";
-        public static string SINGLE_SELECT = "SingleOption";
-        public static string MULTI_SELECT = "MultiOption";
-        public static string NUMERIC = "Numeric";
-        public static string LOCATION = "Location";
-        public static string DATETIME = "DateTime";
-        public static string IMAGE = "Image";
+        public static readonly string TEXT = "Text";
+        public static readonly string SINGLE_SELECT = "SingleOption";
+        public static readonly string MULTI_SELECT = "MultiOption";
+        public static readonly string NUMERIC = "Numeric";
+        public static readonly string LOCATION = "Location";
+        public static readonly string DATETIME = "DateTime";
+        public static readonly string IMAGE = "Image";
     }
 }
